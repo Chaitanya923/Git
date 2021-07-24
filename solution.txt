@@ -24,6 +24,9 @@ git checkout master
 git commit -m "Fourth Commit"  
 git merge Dev
 git merge Test
+git remote add origin https://github.com/Chaitanya923/Git.git
+git branch -M main
+git push -u origin main
 mkdir Git_Assignment2
 cd Git_Assignment2
 git clone https://github.com/Chaitanya923/Git.git
