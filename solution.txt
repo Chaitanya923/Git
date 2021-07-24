@@ -1,0 +1,35 @@
+mkdir Git_Assignment
+cd Git_Assignment
+git init
+notepad filedev.txt
+notepad filetest1.txt
+notepad filetest2.txt
+git checkout -b Dev
+git add filedev.txt
+git status
+git commit -m "First Commit :- filedex.txt is committed to Dev branch"
+git checkout -b Test
+git add filetest1.txt
+git add filetest2.txt
+git status
+git commit -m "Second Commit :- Two Text File is committed to Test branch"
+git checkout master
+git checkout Dev
+notepad filedev.txt
+git diff
+git add .
+git status
+git commit -m "Third Commit :- Modified filedex.txt is committed to Dev branch"
+git checkout master
+git commit -m "Fourth Commit"  
+git merge Dev
+git merge Test
+mkdir Git_Assignment2
+cd Git_Assignment2
+git clone https://github.com/Chaitanya923/Git.git
+cd git
+notepad solution.txt
+git status
+git add .
+git commit -m "Final Commit"
+git push
